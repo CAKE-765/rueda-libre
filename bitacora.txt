@@ -1,0 +1,1 @@
+el HTML servira para darle forma a la pagina, el CSS lo utilizaremos para que nuestra pagina se vea bonita y JavaScript para darle funcionalidad a nuestra pagina 
