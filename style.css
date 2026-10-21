@@ -22,6 +22,7 @@ body.inicio::before {
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(7px);
+    
     transform: scale(1.01);
 }
 .contenedor {
@@ -61,10 +62,10 @@ li>img {
     height: 300px;
 }
 h1{
-    color: #000000e4;
+    color: #020202e4;
 }
 h3{
-    color: #0e36ece4;
+    color: #4e2a04e4;
     font-size: 20px;
     text-decoration: underline;
 }
@@ -73,4 +74,8 @@ section{
     padding: 20px;
     margin: 0px;
     border-radius: 10px;
+}
+section h3{
+    color: #000000;
+    text-decoration: none;
 }
