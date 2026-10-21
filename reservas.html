@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reservas.css">
 </head>
 
 <body class="inicio">
@@ -15,29 +15,72 @@
         <button type="button" onclick="location.href='tarifa.html'">Tarifas y precios</button>
     </nav>
     <main>
-         <h1>Reservas</h1>
-         <p>Realiza tu reserva aquí.</p>
-         <section>
-            <form action="">
+        <h1>Reservas</h1>
+        <p>Realiza tu reserva aquí.</p>
+        <section class="formulario">
+            <form action="index.html" method="post">
                 <fieldset>
                     <legend>Tusdatos</legend>
-                    <label for="nombre">Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50">
-                    <label for="documento">Documento:</label>
-                    <input type="number" id="documento" name="documento" required minlength="6" maxlength="10">
-                    
+                    <p>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50">
+                    </p>
+                    <p>
+                        <label for="documento">Documento:</label>
+                        <input type="number" id="documento" name="documento" required minlength="6" maxlength="10">
+                    </p>
+                    <p>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+                    <p>
+                        <label for="celular">Celular:</label>
+                        <input type="tel" id="celular" name="celular" required pattern="3[0-9]{9}"
+                            title="Ingresa 10 dígitos y comienza por 3.">
+                    </p>
                 </fieldset>
                 <fieldset>
                     <legend>Tu alquiler</legend>
-                    la
+                    <p>
+
+
+                        <label for="fecha">Fecha de alquiler:</label>
+                        <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
+                    </p>
+                    <p>
+                    <label for="tipo">Tipo de bicicleta:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona un tipo</option>
+                        <option value="montaña">Montaña</option>
+                        <option value="carretera">Carretera</option>
+                        <option value="eléctrica">Eléctrica</option>
+                    </select>
+                    </p>
+                    <p>
+                    <label for="plan">Plan de alquiler:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">Selecciona un plan</option>
+                        <option value="hora">Por hora</option>
+                        <option value="dia">Por día</option>
+                        <option value="semana">Por semana</option>
+                    </select>
+                    </p>
+                    <label for="cantidad">Cantidad de bicicletas:</label>
+                    <input type="number" id="cantidad" name="cantidad" required min="1" max="6" >
                 </fieldset>
                 <fieldset>
                     <legend>confirmacion</legend>
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="300"
+                        optional></textarea>
+                    <label for="politicas">Acepto las políticas de privacidad:</label>
+                    <input type="checkbox" id="politicas" name="politicas" required>
                 </fieldset>
+                <button type="submit" class="boton-enviar" onclick="return confirm('¿Estás seguro de que deseas enviar la reserva?');">Enviar Reserva</button>
             </form>
-         </section>
+        </section>
     </main>
-   
+
 
 
 </body>
