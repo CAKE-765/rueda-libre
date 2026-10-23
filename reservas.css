@@ -13,6 +13,24 @@ body {
     margin: 0;
     padding: 5px;
 }
+body.inicio {
+    background-color: transparent;
+    min-height: 100vh;
+    isolation: isolate;
+}
+body.inicio::before {
+    content: "";
+    position: fixed;
+    inset: -8px;
+    z-index: -1;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./img/pexels-damiendufourartiste-37871385.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(6px);
+}
 .contenedor {
     background-color: #000000;
     display: flex;
@@ -76,8 +94,11 @@ fieldset {
     background-color: #080808e4;
 }
 
-nav {
+nav{
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav a {

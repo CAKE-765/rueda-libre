@@ -1,13 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     margin: 5px;
     padding: 0;
 }
- 
-:root{
+
+:root {
     --black-color: #000;
-    --fondo-color:#f1830688;
+    --fondo-color: #f1830688;
 }
+
 body {
     background-color: var(--fondo-color);
     color: #ffffff;
@@ -15,6 +16,7 @@ body {
     margin: 0;
     padding: 5px;
 }
+
 .contenedor {
     background-color: var(--black-color);
     display: flex;
@@ -23,6 +25,7 @@ body {
     padding: 20px;
     color: var(--black-color);
 }
+
 button {
     height: 50px;
     background-color: var(--black-color);
@@ -33,16 +36,20 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #f18306e4;
     color: #ffffff;
 }
-p{
+
+p {
     margin-top: 20px;
 }
+
 li {
     list-style-type: none;
 }
+
 ol>li {
     background-color: #00000053;
     width: 300px;
@@ -51,41 +58,78 @@ ol>li {
     margin: 10px 0;
     border-radius: 50%;
 }
+
 li>img {
     width: 300px;
     height: 300px;
 }
-h1{
+
+h1 {
     color: #020202e4;
     font-size: 30px;
 }
-h2{
+
+h2 {
     color: #000000e4;
     font-size: 20px;
 }
-h3{
+
+h3 {
     color: #4e2a04e4;
     font-size: 20px;
     text-decoration: underline;
 }
-section{
+
+section {
     color: #ffffff;
     padding: 10px;
-    margin: 0px;
-    
+    margin: 5px;
+    background-color: #00000053;
 }
-section h3{
+
+header {
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    background-color: #00000053;
+}
+
+aside {
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    background-color: #00000053;
+}
+
+footer {
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    background-color: #00000053;
+}
+
+section h3 {
     color: var(--black-color);
     text-decoration: none;
 }
-nav{
+
+section ol {
     display: flex;
+
 }
-nav a{
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
     margin-left: auto;
 }
-nav img{
+
+nav img {
     margin-left: 0;
     width: 50px;
 }
-
