@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 5px;
     padding: 0;
@@ -64,6 +64,7 @@ main {
     height: 100vh;
     width: 100vw;
 }
+
 .formulario {
     background-color: #3f3f3b;
     color: #f2ecec;
@@ -74,12 +75,14 @@ main {
     margin: auto;
     height: 650px;
 }
+
 fieldset {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
     height: 170px;
 }
+
 .boton-enviar {
     background-color: #f1f5f6e4;
     color: #090909;
@@ -89,16 +92,20 @@ fieldset {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .boton-enviar:hover {
     background-color: #080808e4;
 }
-nav{
+
+nav {
     display: flex;
 }
-nav a{
+
+nav a {
     margin-left: auto;
 }
-nav img{
+
+nav img {
     margin-left: 0;
     width: 50px;
 }
