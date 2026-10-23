@@ -13,6 +13,7 @@
     <nav class="contenedor">
         <button type="button" onclick="location.href='index.html'">inicio</button>
         <button type="button" onclick="location.href='tarifa.html'">Tarifas y precios</button>
+     <a href="./index.html"> <img src="./img/image.jpeg"> </a>
     </nav>
     <main>
         <h1>Reservas</h1>
@@ -48,25 +49,25 @@
                         <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
                     </p>
                     <p>
-                    <label for="tipo">Tipo de bicicleta:</label>
-                    <select id="tipo" name="tipo" required>
-                        <option value="">Selecciona un tipo</option>
-                        <option value="montaña">Montaña</option>
-                        <option value="carretera">Carretera</option>
-                        <option value="eléctrica">Eléctrica</option>
-                    </select>
+                        <label for="tipo">Tipo de bicicleta:</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Selecciona un tipo</option>
+                            <option value="montaña">Montaña</option>
+                            <option value="carretera">Carretera</option>
+                            <option value="eléctrica">Eléctrica</option>
+                        </select>
                     </p>
                     <p>
-                    <label for="plan">Plan de alquiler:</label>
-                    <select id="plan" name="plan" required>
-                        <option value="">Selecciona un plan</option>
-                        <option value="hora">Por hora</option>
-                        <option value="dia">Por día</option>
-                        <option value="semana">Por semana</option>
-                    </select>
+                        <label for="plan">Plan de alquiler:</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">Selecciona un plan</option>
+                            <option value="hora">Por hora</option>
+                            <option value="dia">Por día</option>
+                            <option value="semana">Por semana</option>
+                        </select>
                     </p>
                     <label for="cantidad">Cantidad de bicicletas:</label>
-                    <input type="number" id="cantidad" name="cantidad" required min="1" max="6" >
+                    <input type="number" id="cantidad" name="cantidad" required min="1" max="6">
                 </fieldset>
                 <fieldset>
                     <legend>confirmacion</legend>
@@ -76,16 +77,17 @@
                     <label for="politicas">Acepto las políticas de privacidad:</label>
                     <input type="checkbox" id="politicas" name="politicas" required>
                 </fieldset>
-                <button type="submit" class="boton-enviar" onclick="return confirm('¿Estás seguro de que deseas enviar la reserva?');">Enviar Reserva</button>
+                <button type="submit" class="boton-enviar"
+                    onclick="return confirm('¿Estás seguro de que deseas enviar la reserva?');">Enviar Reserva</button>
             </form>
         </section>
     </main>
 
-
+    <footer>
+        <p>&copy; 2024 Rueda Libre. ruedalibre@gmail.com Todos los derechos reservados.</p>
+    </footer>
 
 </body>
-<footer>
-    <p>&copy; 2024 Rueda Libre. ruedalibre@gmail.com Todos los derechos reservados.</p>
-</footer>
+
 
 </html>

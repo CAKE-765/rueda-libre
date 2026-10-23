@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+}
+
 body {
     background-color: #f18306e5;
     color: #ffffff;
@@ -85,4 +91,14 @@ fieldset {
 }
 .boton-enviar:hover {
     background-color: #080808e4;
+}
+nav{
+    display: flex;
+}
+nav a{
+    margin-left: auto;
+}
+nav img{
+    margin-left: 0;
+    width: 50px;
 }
