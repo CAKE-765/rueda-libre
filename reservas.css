@@ -1,114 +1,37 @@
-* {
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 0;
-}
-:root{
-    --fondo-color:#f1830688;
-}
 body {
-    background-color: var(--fondo-color);
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 5px;
-}
-body.inicio {
-    background-color: transparent;
-    min-height: 100vh;
+    position: relative;
     isolation: isolate;
+    min-height: 100vh;
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
-body.inicio::before {
-    content: "";
+
+body::before {
     position: fixed;
-    inset: -8px;
     z-index: -1;
+    inset: -8px;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(rgb(0 0 0 / 35%), rgb(0 0 0 / 35%)),
         url("./img/pexels-damiendufourartiste-37871385.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    content: "";
     filter: blur(6px);
 }
-.contenedor {
-    background-color: #000000;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    color: #000000;
-}
 
-button {
-    height: 50px;
-    background-color: black;
-    padding: 10px;
-    margin: 1px;
-    border: none;
-    color: #ffffff;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #f18306e4;
-    color: #ffffff;
-}
-
-main {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
-
-.formulario {
-    background-color: #3f3f3b;
+.reservation-card {
+    max-width: 900px;
     color: #f2ecec;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
-    margin: auto;
-    height: 650px;
+    background-color: rgb(63 63 59 / 94%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
 }
 
-fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    height: 170px;
+.reservation-card fieldset {
+    border-color: #ccc !important;
 }
 
-.boton-enviar {
-    background-color: #f1f5f6e4;
-    color: #090909;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.boton-enviar:hover {
-    background-color: #080808e4;
-}
-
-nav{
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-nav a {
-    margin-left: auto;
-}
-
-nav img {
-    margin-left: 0;
-    width: 50px;
-}
-input:focus{
-    outline: 2px solid rgb(255, 0, 0);
+.reservation-card legend,
+main header h1 {
+    color: #fff;
 }

@@ -1,97 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarifas y Precios</title>
-    <link rel="stylesheet" href="tarifa.css">
+    <title>Tarifas y precios | Rueda Libre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./tarifa.css">
 </head>
- 
-<body class="inicio">
-    <nav class="contenedor">
-        <button type="button" onclick="location.href='index.html'">inicio</button>
-        <button type="button" onclick="location.href='tarifa.html'">Tarifas y precios</button>
-        <a href="./index.html"> <img src="./img/image.jpeg"> </a>
-        
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
+                <img src="./img/image.jpeg" alt="Logo de Rueda Libre" width="48" height="48" class="rounded-circle">
+                <span>Rueda Libre</span>
+            </a>
+            <div class="navbar-nav flex-row flex-wrap gap-2">
+                <a class="nav-link" href="./index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="./tarifa.html">Tarifas y precios</a>
+                <a class="nav-link" href="./reservas.html">Reservas</a>
+            </div>
+        </div>
     </nav>
-    <main>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Tipo de bicicleta</th>
-                    <th>1 hora</th>
-                    <th>Medio dia(4 h)</th>
-                    <th>Dia completo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Urbana</td>
-                    <td>$10.000</td>
-                    <td>$30.000</td>
-                    <td>$50.000</td>
-                </tr>
-                <tr>
-                    <td>Montaña</td>
-                    <td>$15.000</td>
-                    <td>$45.000</td>
-                    <td>$70.000</td>
-                </tr>
-                <tr>
-                    <td>Electrica</td>
-                    <td>$25.000</td>
-                    <td>$70.000</td>
-                    <td>$110.000</td>
-                </tr>
-            </tbody>
-        </table>
-        <br><br>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Recorrido</th>
-                    <th>Distancia</th>
-                    <th>Duracion</th>
-                    <th>Nivel</th>
-                    <th>Precio por persona</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Rio y parques</td>
-                    <td>12 Km</td>
-                    <td>2 horas</td>
-                    <td>Facil</td>
-                    <td>$45.000</td>
-                </tr>
-                <tr>
-                    <td>Sabores de barrio</td>
-                    <td>18 Km</td>
-                    <td>3 horas</td>
-                    <td>Medio</td>
-                    <td>$60.000</td>
-                </tr>
-                <tr>
-                    <td>Reto de palmas</td>
-                    <td>25 Km</td>
-                    <td>4 horas</td>
-                    <td>Dificil</td>
-                    <td>$85.000</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <button type="button" class="reservar" onclick="location.href='reservas.html'">Reservas</button>
-        <p>
-            Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a. m. Qué
-            llevar: ropa cómoda, agua, protector solar y documento de identidad.
+
+    <main class="container py-4">
+        <header class="page-heading text-center mb-4">
+            <h1 class="display-5 fw-bold">Tarifas y precios</h1>
+            <p class="lead mb-0">Elige tu bicicleta o recorrido y disfruta Medellín.</p>
+        </header>
+
+        <section class="pricing-panel p-3 p-md-4 rounded-3 mb-4" aria-labelledby="tarifas-bicicletas">
+            <h2 id="tarifas-bicicletas">Alquiler de bicicletas</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Tipo de bicicleta</th>
+                            <th scope="col">1 hora</th>
+                            <th scope="col">Medio día (4 h)</th>
+                            <th scope="col">Día completo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Urbana</th>
+                            <td>$10.000</td>
+                            <td>$30.000</td>
+                            <td>$50.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Montaña</th>
+                            <td>$15.000</td>
+                            <td>$45.000</td>
+                            <td>$70.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Eléctrica</th>
+                            <td>$25.000</td>
+                            <td>$70.000</td>
+                            <td>$110.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="pricing-panel p-3 p-md-4 rounded-3 mb-4" aria-labelledby="tarifas-recorridos">
+            <h2 id="tarifas-recorridos">Recorridos guiados</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Recorrido</th>
+                            <th scope="col">Distancia</th>
+                            <th scope="col">Duración</th>
+                            <th scope="col">Nivel</th>
+                            <th scope="col">Precio por persona</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Río y parques</th>
+                            <td>12 km</td>
+                            <td>2 horas</td>
+                            <td>Fácil</td>
+                            <td>$45.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sabores de barrio</th>
+                            <td>18 km</td>
+                            <td>3 horas</td>
+                            <td>Medio</td>
+                            <td>$60.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Reto de Palmas</th>
+                            <td>25 km</td>
+                            <td>4 horas</td>
+                            <td>Difícil</td>
+                            <td>$85.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="text-center mb-4">
+            <a class="btn btn-warning btn-lg" href="./reservas.html">Reserva tu bicicleta</a>
+        </div>
+        <p class="alert alert-light mb-4" role="note">Todas las tarifas incluyen casco y candado. Los recorridos salen
+            sábados y domingos a las 7:00 a. m. Qué llevar: ropa cómoda, agua, protector solar y documento de identidad.
         </p>
-        <footer>
-            <p>&copy; 2024 Rueda Libre. ruedalibre@gmail.com Todos los derechos reservados.</p>
-        </footer>
     </main>
 
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="container mb-0">&copy; 2024 Rueda Libre. ruedalibre@gmail.com. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
