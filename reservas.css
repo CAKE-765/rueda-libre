@@ -21,10 +21,24 @@ body::before {
 }
 
 .reservation-card {
-    max-width: 900px;
+    height: 100%;
     color: #f2ecec;
     background-color: rgb(63 63 59 / 94%);
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+.contact-card {
+    color: #f2ecec;
+    background-color: rgb(63 63 59 / 94%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+.contact-card h2 {
+    color: #fff;
+}
+
+.contact-card a:not(.btn) {
+    color: #fff;
 }
 
 .reservation-card fieldset {

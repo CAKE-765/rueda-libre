@@ -1,7 +1,7 @@
 body {
     display: grid;
     min-height: 100vh;
-    background-color: #f18306;
+    background-color: #6f6459;
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -10,6 +10,68 @@ body {
 .content-panel {
     color: #fff;
     background-color: rgb(0 0 0 / 55%);
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.promotion-panel {
+    background-color: #1d2b35;
+}
+
+.promotion-slide {
+    display: flex;
+    min-height: 270px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 5rem 3.5rem;
+    color: #fff;
+}
+
+.promotion-slide h2 {
+    max-width: 760px;
+}
+
+.promotion-slide p {
+    max-width: 620px;
+}
+
+.promotion-urban {
+    background: linear-gradient(115deg, rgb(18 53 73 / 96%), rgb(24 103 111 / 88%));
+}
+
+.promotion-electric {
+    background: linear-gradient(115deg, rgb(39 71 50 / 96%), rgb(103 127 48 / 88%));
+}
+
+.promotion-birthday {
+    background: linear-gradient(115deg, rgb(76 44 74 / 96%), rgb(154 79 92 / 88%));
+}
+
+.promotion-label {
+    margin-bottom: .75rem;
+    color: #ffe0bd;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.promotion-slide .btn {
+    align-self: flex-start;
+    color: #212529;
+    font-weight: 600;
+}
+
+.promotion-panel .carousel-control-prev,
+.promotion-panel .carousel-control-next {
+    width: 3.5rem;
 }
 
 .hero-panel h1,
@@ -37,6 +99,68 @@ body {
     object-fit: cover;
 }
 
+.fleet-card {
+    color: #212529;
+    background-color: #fff;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.fleet-card .card-title {
+    color: #212529;
+}
+
+.fleet-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 18%) !important;
+}
+
+.fleet-card-price {
+    color: #145da0;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.route-card {
+    color: #212529;
+}
+
+.route-card .card-title {
+    color: #212529;
+}
+
+.route-card-image {
+    width: 100%;
+    height: clamp(180px, 24vw, 240px);
+    object-fit: cover;
+}
+
+.fleet-card-image {
+    width: 100%;
+    height: clamp(160px, 30vw, 220px);
+    object-fit: cover;
+}
+
 .content-panel a {
     color: #ffe0bd;
+}
+
+.content-panel .fleet-card a.btn {
+    color: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .promotion-slide {
+        min-height: 300px;
+        padding: 2rem 3.5rem 3.5rem;
+    }
+
+    .promotion-slide h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fleet-card {
+        transition: none;
+    }
 }

@@ -17,10 +17,16 @@
                 <img src="./img/image.jpeg" alt="Logo de Rueda Libre" width="48" height="48" class="rounded-circle">
                 <span>Rueda Libre</span>
             </a>
-            <div class="navbar-nav flex-row flex-wrap gap-2">
-                <a class="nav-link" href="./index.html">Inicio</a>
-                <a class="nav-link active" aria-current="page" href="./tarifa.html">Tarifas y precios</a>
-                <a class="nav-link" href="./reservas.html">Reservas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir o cerrar menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="./tarifa.html">Tarifas y precios</a>
+                    <a class="nav-link" href="./reservas.html">Reservas</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -118,6 +124,9 @@
     <footer class="bg-dark text-white text-center py-3">
         <p class="container mb-0">&copy; 2024 Rueda Libre. ruedalibre@gmail.com. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
