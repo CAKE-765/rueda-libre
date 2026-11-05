@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nocturna | Rueda Libre</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+</head>
+<body>
+    <nav class="sticky top-0 z-50 bg-gray-900 text-white">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+            <a class="flex items-center gap-2 text-lg font-semibold" href="./index.html">
+                <img src="./img/image.jpeg" alt="Logo de Rueda Libre" width="48" height="48"
+                    class="h-12 w-12 rounded-full object-cover">
+                <span>Rueda Libre</span>
+            </a>
+
+            <details class="relative md:hidden">
+                <summary aria-label="Abrir o cerrar menú de navegación"
+                    class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded hover:bg-gray-700 [&::-webkit-details-marker]:hidden">
+                    <span class="sr-only">Menú</span>
+                    <span class="flex w-5 flex-col gap-1" aria-hidden="true">
+                        <span class="h-0.5 w-full bg-white"></span>
+                        <span class="h-0.5 w-full bg-white"></span>
+                        <span class="h-0.5 w-full bg-white"></span>
+                    </span>
+                </summary>
+                <div class="absolute right-0 top-full mt-2 flex min-w-48 flex-col rounded bg-gray-800 p-2 shadow-lg">
+                    <a class="rounded bg-gray-700 px-3 py-2 text-white" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="rounded px-3 py-2 text-gray-200 hover:bg-gray-700" href="./tarifa.html">Tarifas y precios</a>
+                    <a class="rounded px-3 py-2 text-gray-200 hover:bg-gray-700" href="./reservas.html">Reservas</a>
+                </div>
+            </details>
+
+            <div class="hidden items-center gap-1 md:flex">
+                <a class="rounded bg-gray-700 px-3 py-2 text-white" aria-current="page" href="./index.html">Inicio</a>
+                <a class="rounded px-3 py-2 text-gray-200 hover:bg-gray-700" href="./tarifa.html">Tarifas y precios</a>
+                <a class="rounded px-3 py-2 text-gray-200 hover:bg-gray-700" href="./reservas.html">Reservas</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
