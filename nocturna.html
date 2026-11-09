@@ -109,7 +109,7 @@
                             $55.000
                         </span>
                         <button class="rounded-lg bg-brand-blue px-4 py-2 text-brand-white transition hover:bg-brand-night focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-farol dark:bg-farol dark:text-brand-ink dark:hover:bg-brand-cream">
-                            Inscríbete
+                            <a href="./reservas.html">Inscríbete</a>
                         </button>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                             $75.000
                         </span>
                         <button class="rounded-lg bg-brand-blue px-4 py-2 text-brand-white transition hover:bg-brand-night focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-farol dark:bg-farol dark:text-brand-ink dark:hover:bg-brand-cream">
-                            Inscríbete
+                             <a href="./reservas.html">Inscríbete</a>
                         </button>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                             $95.000
                         </span>
                         <button class="rounded-lg bg-brand-blue px-4 py-2 text-brand-white transition hover:bg-brand-night focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-farol dark:bg-farol dark:text-brand-ink dark:hover:bg-brand-cream">
-                            Inscríbete
+                            <a href="./reservas.html">Inscríbete</a>
                         </button>
                     </div>
                 </div>
@@ -189,22 +189,26 @@
                 </div>
             </div>
 
-            <form class="flex flex-col gap-5">
+            <form action="./reservas.html" class="flex flex-col gap-5" method="get">
                 <h2 class="text-2xl font-bold text-farol">Déjanos tus datos</h2>
                 <div class="flex flex-col gap-2">
                     <label for="correo" class="font-semibold text-brand-cream">Correo electrónico</label>
-                    <input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com"
+                    <input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com" required
                         aria-describedby="ayuda-correo"
                         class="rounded border border-brand-cream/40 bg-brand-deep p-3 text-brand-white placeholder:text-brand-cream/60 focus-visible:border-farol focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-farol">
                     <p id="ayuda-correo" class="text-sm text-brand-cream">Usaremos tu correo para confirmar la inscripción.</p>
                 </div>
                 <div class="flex flex-col gap-2">
                     <label for="celular" class="font-semibold text-brand-cream">Celular</label>
-                    <input id="celular" name="celular" type="tel" placeholder="300 123 4567"
+                    <input id="celular" name="celular" type="tel" placeholder="300 123 4567" required
                         aria-describedby="ayuda-celular"
                         class="rounded border border-brand-cream/40 bg-brand-deep p-3 text-brand-white placeholder:text-brand-cream/60 focus-visible:border-farol focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-farol">
                     <p id="ayuda-celular" class="text-sm text-brand-cream">Incluye el indicativo si tu número es internacional.</p>
                 </div>
+                <button type="submit"
+                    class="w-fit rounded-lg bg-farol px-5 py-3 font-bold text-brand-ink shadow-lg shadow-farol/20 transition hover:bg-brand-cream focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-farol dark:shadow-farol/30">
+                    Ir a reservas
+                </button>
             </form>
         </section>
     </main>
