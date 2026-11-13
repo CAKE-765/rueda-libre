@@ -1,1 +1,30 @@
-el HTML servira para darle forma a la pagina, el CSS lo utilizaremos para que nuestra pagina se vea bonita y JavaScript para darle funcionalidad a nuestra pagina 
+BITACORA DEL PROYECTO: RUEDA LIBRE
+
+DESCRIPCION
+Rueda Libre es un sitio web informativo para un servicio de alquiler de bicicletas y recorridos guiados en Medellin. El sitio esta compuesto por paginas HTML, hojas de estilo CSS e imagenes locales. No se encontraron archivos JavaScript propios ni una conexion a una base de datos.
+
+PAGINAS Y CONTENIDO
+- index.html: pagina de inicio. Presenta el servicio, promociones en un carrusel, rutas guiadas, beneficios, servicios, bicicletas disponibles, ubicacion y datos de contacto. Sus botones llevan a la pagina de reservas.
+- tarifa.html: muestra tablas con precios de alquiler de bicicletas y recorridos guiados, ademas de informacion practica y un enlace para reservar.
+- reservas.html: contiene un formulario para datos personales, fecha, bicicleta, plan, cantidad, comentarios y aceptacion de politicas. Incluye la informacion de contacto y un enlace a Google Maps.
+- nocturna.html: presenta tres recorridos nocturnos con distancia, duracion, nivel y precio. Incluye avisos y un formulario de inscripcion. Los enlaces «Inscribete» llevan al formulario de la misma pagina mediante el ancla #formulario.
+
+ESTILOS Y RECURSOS
+- style.css define estilos para la pagina de inicio, sus secciones, tarjetas, promociones y adaptacion a pantallas pequenas.
+- tarifa.css contiene los estilos de la pagina de tarifas.
+- reservas.css contiene los estilos de la pagina de reservas y su fondo.
+- index.html, tarifa.html y reservas.html utilizan Bootstrap 5.3.3; la pagina de inicio tambien utiliza Bootstrap Icons.
+- nocturna.html utiliza Tailwind CSS desde el navegador y define sus colores y tipografia en un bloque de estilos integrado.
+- La carpeta img contiene el logo y las imagenes usadas en las paginas: image.jpeg, images.jpeg, images2.jpeg, img1.jpeg a img6.jpeg, miradores.jpeg, nocturna2.jpeg, nocturna3.jpeg, nocturno1.jpeg, pexels-damiendufourartiste-37871385.jpg, sendero.jpeg y urbana.jpeg.
+
+NAVEGACION Y FORMULARIOS
+Las paginas incluyen enlaces para navegar entre Inicio, Tarifas, Reservas y Rutas Nocturnas. Los formularios utilizan validaciones HTML como campos obligatorios, limites, tipos de dato y patrones. La pagina nocturna usa el metodo GET; sus botones de inscripcion permiten desplazarse hasta el formulario sin salir de la pagina.
+
+PENDIENTES POR REVISAR
+- Los formularios son estaticos: no se encontro un servicio que guarde o procese las reservas. El metodo GET solo agrega los datos a la direccion web y no confirma una reserva real.
+- En nocturna.html, el formulario tiene action="#incio", pero el identificador de la pagina es "inicio". Se debe corregir el destino si se espera regresar al inicio despues de enviar.
+- En reservas.html, el formulario envia a index.html mediante GET. Revisar el destino y el manejo de datos cuando se implemente el proceso real de reservas.
+- Revisar los campos de bicicleta del formulario nocturno: las dos opciones de radio comparten el mismo id y no declaran valores distintos.
+
+ESTADO DE LA BITACORA
+Este registro resume los archivos y funcionalidades presentes en el proyecto. Las observaciones de pendientes describen aspectos por completar y no indican que se haya realizado una prueba de funcionamiento integral.
